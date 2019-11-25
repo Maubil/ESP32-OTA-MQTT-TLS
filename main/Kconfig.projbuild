@@ -1,0 +1,16 @@
+menu "Example Configuration"
+
+    config BROKER_URI
+        string "Broker URL"
+        default "mqtts://192.168.2.103:8883"
+        help
+            URL of an mqtt broker which this example connects to.
+
+    config EXAMPLE_FIRMWARE_UPGRADE_URL
+        string "Firmware Upgrade URL"
+        default "https://192.168.2.103/fw/fw.bin"
+        help
+            URL of server which hosts the firmware image.
+
+
+endmenu
